@@ -1,0 +1,81 @@
+*{
+  margin: 1px;
+  padding: 0;
+}
+body{
+  display: grid;
+  font-family: Dark;
+  background-color: white;
+
+}
+@font-face {
+  font-family: Dark;
+  src: url(fonts/OptimusPrinceps.ttf);
+}
+#vertigo{
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+.fa-pause{
+  display: none;
+}
+#audioplayer{
+  background-color: white;
+  border: solid 2px black;
+  width: 100%;
+}
+#volume{
+  float: right;
+}
+#play{
+  float: left
+}
+#play:hover{
+  cursor: pointer;
+}
+#pause:hover{
+  cursor: pointer;
+}
+#pause{
+  float: left;
+  padding-left: 2px;
+  pointer: cursor;
+}
+#bal{
+  border-radius: 50%;
+  padding: 20px;
+  background-color: black;
+}
+#progressint{
+  float: right;
+}
+#myRange{
+  float: left;
+}
+progress[value]::-moz-progress-bar {
+  background-image:
+    -moz-linear-gradient(
+      135deg,
+      transparent 33%,
+      rgba(0, 0, 0, 0.1) 33%,
+      rgba(0, 0, 0, 0.1) 66%,
+      transparent 66%
+    ),
+    -moz-linear-gradient(
+      top,
+      rgba(255, 255, 255, 0.25),
+      rgba(0, 0, 0, 0.25)
+    ),
+    -moz-linear-gradient(
+      left,
+      #09c,
+      #f44
+    );
+
+  border-radius: 2px;
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+progress[value]:hover{
+  cursor: pointer;
+}
